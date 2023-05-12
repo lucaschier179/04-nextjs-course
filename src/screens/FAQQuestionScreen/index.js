@@ -16,7 +16,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, preview }) {
   const { id } = params;
   const contentQuery = `
     query {
@@ -29,7 +29,8 @@ export async function getStaticProps({ params }) {
     }
   `;
   const { data } = await cmsService({
-    query: contentQuery
+    query: contentQuery,
+    preview,
   });
   console.log('Dados do CMS:', data);
 
