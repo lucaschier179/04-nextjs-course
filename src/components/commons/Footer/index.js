@@ -2,7 +2,8 @@ import { getCMSContent } from '../../../infra/cms/CMSProvider';
 import { Box, Text, theme, Link } from '../../../theme/components';
 
 export function Footer() {
-  const description = getCMSContent().globalContent?.globlaFooter?.description;
+  //console.log(getCMSContent());
+  const description = getCMSContent('globalContent.globlaFooter.description');
   return (
     <Box
       tag="footer"
