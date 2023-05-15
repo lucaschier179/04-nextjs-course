@@ -13,7 +13,7 @@ const PREVIEW_ENDPOINT = 'https://graphql.datocms.com/preview';
 
 export async function cmsService({
   query,
-  preview
+  preview,
 }) {
   const ENDPOINT = preview ? PREVIEW_ENDPOINT : BASE_ENDPOINT;
   try {

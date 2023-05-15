@@ -25,12 +25,15 @@ export async function getStaticProps({ preview }) {
 function HomeScreen() {
   return (
     <>
+    {/* Common SEO Block */}
       <Head>
         <title>Home - Alura</title>
       </Head>
 
+      {/* Menu */}
       <Menu />
 
+      {/* HEROSECTION */}
       <Box
         tag="main"
         styleSheet={{
@@ -55,9 +58,11 @@ function HomeScreen() {
           }}
         >
           <Text tag="h1" variant="display1">
+            {/* Title */}
             Mergulhe em Tecnologia!
           </Text>
           <Text tag="p" variant="body1">
+            {/* Description */}
             Você vai estudar, praticar, discutir e se aprofundar em uma plataforma que respira tecnologia.
           </Text>
           <Button href="/faq" colorVariant="neutral">

@@ -1,5 +1,5 @@
 import React from "react";
-import get from 'lodash/get'
+import get from 'lodash/get';
 
 const CMSContext = React.createContext({
   cmsContent: {}
@@ -15,7 +15,7 @@ export const getCMSContent = (path = '') => {
   if(output) throw new Error(`Não foi possível encontrar a chave: "${path}". Reveja sua query e tente novamente!`)
 
   return output;
-}
+};
 
 export default function CMSProvider({ cmsContent, children }) {
   return (
