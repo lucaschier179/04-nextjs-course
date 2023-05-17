@@ -1,8 +1,8 @@
 import { Box, Text, Link, Image, theme } from '../../../theme/components';
 
 export function PageFAQDisplayQuestionsSection(props) {
-  console.log(props.categories)
-  const categories = [props.categories];
+  //console.log(props.categories)
+  const categories = props.categories;
   return (
     <Box
     tag="main"
