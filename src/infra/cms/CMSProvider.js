@@ -12,7 +12,7 @@ export const getCMSContent = (path = '') => {
 
   const output = get(cmsContent, path);
 
-  if(output) throw new Error(`Não foi possível encontrar a chave: "${path}". Reveja sua query e tente novamente!`)
+  //if(!output) throw new Error(`Não foi possível encontrar a chave: "${path}". Reveja sua query e tente novamente!`)
 
   return output;
 };
