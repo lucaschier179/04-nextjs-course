@@ -27,6 +27,7 @@ export async function getStaticProps({ preview }) {
             ... on PagefaqDisplayQuestionSectionRecord {
               id
               categories {
+                id
                 title
                 questions {
                   id
